@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
+}
+
+.container2{
+
+    
+  display: block;
+  margin-top: 125px;
+  margin-left: 250px;
+  margin-right: auto;
+}
+.container .btn {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: transparent;
+  color: rgb(230, 226, 17);
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.products{
+        display: inline-block; 
+        margin: 20px;
+        margin-left: 79px;
+    }
+
+
+    .a {
+ position: absolute;
+  top: 8px;
+  right: 16px;
+  font-size: 18px;
+ }
+ .newsletter{
+
+
+    display: inline-block; 
+    width: 550px;
+    margin-left: 79px;
+    margin-top: auto;
+
+ }
+
+ .subscribe{
+
+    display: inline-block; 
+    margin-left: 450px;
+
+ }
+ .subscribeme{
+
+display: inline-block; 
+
+
+}
+body {
+  margin: 0;
+}
+
+.image-grid {
+  --gap: 16px;
+  --num-cols: 4;
+  --row-height: 300px;
+
+  box-sizing: border-box;
+  padding: var(--gap);
+  margin-top: 10%;
+
+
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr);
+  grid-auto-rows: var(--row-height);
+  gap: var(--gap);
+}
+
+.image-grid > img {
+
+  
+  width: 80%;
+  height:80%;
+  object-fit: cover;
+}
+
+.image-grid-col-2 {
+  grid-column: span 2;
+}
+
+.image-grid-row-2 {
+  grid-row: span 2;
+}
+
+/* Anything udner 1024px */
+@media screen and (max-width: 1024px) {
+  .image-grid {
+
+    --num-cols: 2;
+    --row-height: 200px;
+  }
+}
+
+
+
+</style>
+</head>
+<div class="container">
+    <img src="images /Untitled.jpg" width="100"
+</div>
+
+<div class="a">
+
+    <input type='text' placeholder='Search...' id='search-text-input' />
+
+</div>
+
+
+
+<div>
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a href="#news">Shop</a></li>
+    <li><a href="#contact">About Us </a></li>
+    <li><a href="#contact">Contact Us </a></li>
+    <li><a href="#contact">Prime Membership </a></li>
+  
+  </ul>
+</div>  
+
+<div class="container2">
+    <img src="images /119479489-designer-team-working-on-new-clothes-collection-and-piece-of-cloth-on-mannequin-fashion-industry-clo.jpg" alt="Snow" style="width:1000px">
+    <button class="btn">Shop Now</button>
+</div>
+<div >
+  <p style="text-align:center;" > Featuring Products <p>
+
+</div>
+
+<div  class="products">
+    <a href="product1.html">
+
+<img src="images /madidasjacket2.jpg">
+</a>
+<p>  Adidas Hood  </p>
+<p>  $34  </p>
+
+
+</div>
+
+<div  class="products">
+    <img src="images /madidasjacket3.jpg">
+    <p>  Adidas FullSleve</p>
+<p>  $25 </p>
+</div>
+
+<div  class="products">
+    <img src="images /madidasjacket5.jpg">
+    <p>  Adidas   </p>
+<p>  $34  </p>
+</div>
+
+<div class="newsletter" >
+<p style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" >Join the Insiders Club to gain access to additional savings, member exclusives, members-only content, and some of the best contests and giveaways in the industry.</p>
+
+
+</div>
+
+<div class="subscribe" >
+
+    <input type="text" id="email" name="email"><br><br> 
+</div>
+
+<div class="subscribeme">
+    <button style="float:right;"  type="submit">Subscribe</button>
+
+
+</div>
+<div class="image-grid">
+    <img class="image-grid-col-2 image-grid-row-2" src="images /atracks.jpg" alt="architecture" >
+    <img src="images /amenshoes.jpg" alt="architecture">
+    <img src="images /amenshoes2.jpg" alt="architecture">
+    <img src="images /amenshoes3.jpg" alt="architecture">
+    <img src="images /amenshoes5.jpg" alt="architecture">
+ 
+</div>
+   
+</body>
+</html>
+
